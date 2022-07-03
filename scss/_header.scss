@@ -1,0 +1,22 @@
+header{
+    .navbar{
+        .container-fluid{
+            .gif{
+                width: 30px;
+                height: 30px;
+                @media screen and (max-width: 426px){
+                    &{
+                        display: none;
+                    }
+                }
+            }
+            .login{
+                display: flex;
+                align-content: flex-end;
+            }
+        }
+    }
+}
+
+
+
