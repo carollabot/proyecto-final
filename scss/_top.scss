@@ -1,9 +1,23 @@
-.card:hover .card-img-top{
-    opacity: 0.3;
-    transition: .5s ease;
+
+
+.navbar{
+    width: 100%;
+    .logos{
+        width: 25px;
+        height: 25px;
+    }
 }
-@media screen and (max-width: 426px){
+.productos{
+    width: 100%;
     .row{
-        width: 425px;
+        display: flex;
+        align-items: center;
+        margin: 0%;
+        margin-bottom: 30px;
+        @media screen and (max-width: 426px){
+            &{
+                width: 425px;
+            }
+        }
     }
 }

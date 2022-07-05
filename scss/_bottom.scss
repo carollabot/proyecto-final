@@ -1,0 +1,22 @@
+
+    .navbar{
+        width: 100%;
+        .logos{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .productos{
+        width: 100%;
+        .row{
+            display: flex;
+            align-items: center;
+            margin: 0%;
+            margin-bottom: 30px;
+            @media screen and (max-width: 426px){
+                &{
+                    width: 425px;
+                }
+            }
+        }
+    }
