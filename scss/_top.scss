@@ -2,6 +2,13 @@
 
 .navbar{
     width: 100%;
+    .container-fluid{
+      @media screen and (max-width: 426px){
+        &{
+          width: 100%;
+        }
+      }
+    }
     #navbarNavDarkDropdown{
       @media screen and (max-width: 426px){
         &{
