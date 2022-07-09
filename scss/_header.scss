@@ -2,8 +2,7 @@ header{
     .navbar{
         .container-fluid{
             .gif{
-                width: 30px;
-                height: 30px;
+                @include sizes(30px, 30px);
                 @media screen and (max-width: 426px){
                     &{
                         display: none;

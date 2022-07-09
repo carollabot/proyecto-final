@@ -5,8 +5,7 @@
         margin-top: 50px;
         background-color: black;
         color: white;
-        text-align: center;
-        justify-content: center;
+        @include center;
         font-family: 'Kanit', sans-serif;
         @media screen and (max-width: 426px){
             &{

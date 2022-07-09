@@ -6,8 +6,11 @@ main {
     margin-top: 50px;
     background-color: black;
     color: white;
-    text-align: center;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
     font-family: 'Kanit', sans-serif; }
     @media screen and (max-width: 426px) {
       main .titulo {
@@ -93,8 +96,11 @@ main {
     background-color: black;
     color: white;
     display: flex;
-    text-align: center;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
     font-family: 'Kanit', sans-serif; }
     @media screen and (max-width: 426px) {
       main .bestsellers h2 {
@@ -139,8 +145,11 @@ main {
       width: 100%;
       height: 500px;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      align-self: center;
       overflow: hidden;
       transform-style: preserve-3d;
       perspective: 600px;
@@ -179,8 +188,11 @@ main {
     background-color: black;
     color: white;
     display: flex;
-    text-align: center;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
     font-family: 'Kanit', sans-serif; }
     @media screen and (max-width: 426px) {
       main .mambalife h2 {
@@ -188,8 +200,11 @@ main {
         padding: 20px; } }
   main .mambalife div {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
     margin: 20px auto; }
 
 .navbar {
@@ -256,6 +271,31 @@ main {
     @media screen and (max-width: 426px) {
       .productos .row {
         width: 425px; } }
+    .productos .row .container {
+      position: relative; }
+    .productos .row .card-img-top {
+      opacity: 1;
+      display: block;
+      transition: .6s ease;
+      backface-visibility: hidden; }
+    .productos .row .middle {
+      transition: .6s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center; }
+    .productos .row .container:hover .card-img-top {
+      opacity: 0.3; }
+    .productos .row .container:hover .middle {
+      opacity: 1; }
+    .productos .row .text button {
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      padding: 16px 32px; }
 
 .mambagang h2 {
   font-size: 50px;
@@ -263,8 +303,11 @@ main {
   margin-top: 50px;
   background-color: black;
   color: white;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  align-self: center;
   font-family: 'Kanit', sans-serif; }
   @media screen and (max-width: 426px) {
     .mambagang h2 {
@@ -319,6 +362,9 @@ header .navbar .container-fluid .login {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  text-align: center;
+  align-self: center;
   flex-direction: column;
   gap: 15px; }
   .footer .redes {
@@ -340,100 +386,3 @@ header .navbar .container-fluid .login {
 
 body {
   font-family: 'Kanit', sans-serif; }
-
-.famous{
-background-repeat: no-repeat;
-color: #000;
-overflow-x: hidden
-}
-
-h3 {
-font-weight:bold;
-font-size: 40px;
-margin-bottom:10px;
-padding-top:40px;
-color:rgb(0, 0, 0);
-}
-
-@media (max-width:767px) {
-h3 {
-margin-bottom:25px;
-padding-top:25px;
-font-size:24px;
-}
-}
-
-.intro {
-font-size:16px;
-max-width:500px;
-margin:0 auto;
-}
-
-.people {
-padding:50px 0;
-cursor: pointer;
-}
-.item {
-margin-bottom:30px;
-}
-
-.item .box {
-text-align:center;
-background-repeat:no-repeat;
-background-size:cover;
-background-position:center;
-height:280px;
-position:relative;
-overflow:hidden;
-}
-
-.item .cover {
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background-color:rgba(255, 168, 70, 0.75);
-transition:opacity 0.15s ease-in;
-opacity:0;
-padding-top:80px;
-color:#fff;
-text-shadow:1px 1px 1px rgba(0,0,0,0.15);
-}
-
-.item:hover .cover {
-opacity:1;
-}
-
-.item .name {
-font-weight:bold;
-margin-bottom:8px;
-}
-
-.item .title {
-text-transform:uppercase;
-font-weight:bold;
-color:#bbd8fb;
-letter-spacing:2px;
-font-size:13px;
-margin-bottom:20px;
-}
-
-.social {
-font-size:18px;
-}
-
-.social a {
-color:inherit;
-margin:0 10px;
-display:inline-block;
-opacity:0.7;
-}
-.social a:hover {
-opacity:1;
-}
-
-.desc{
-  text-align: center;
-  padding-bottom: 30px;
-}

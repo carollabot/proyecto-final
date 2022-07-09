@@ -1,8 +1,7 @@
 .footer{
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     flex-direction: column;
     gap: 15px;
     .redes{
@@ -14,8 +13,7 @@
             padding: 0 10px;
         }
         .logos{
-            width: 20px;
-            height: 20px;
+            @include sizes(20px, 20px);
             align-items: center;
         }
     }

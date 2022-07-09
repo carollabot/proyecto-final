@@ -6,8 +6,7 @@ main{
         margin-top: 50px;
         background-color: black;
         color: white;
-        text-align: center;
-        justify-content: center;
+        @include center;
         font-family: 'Kanit', sans-serif;
         @media screen and (max-width: 426px){
             &{
@@ -26,8 +25,7 @@ main{
             grid-template-rows: repeat(8, 5vw);
             grid-gap: 1.5rem; 
             .gallery__img {
-                width: 100%;
-                height: 100%;
+                @include sizes(100%, 100%);
                 object-fit: cover;
                 display: block; 
             }              
@@ -119,8 +117,7 @@ main{
             background-color: black;
             color: white;
             display: flex;
-            text-align: center;
-            justify-content: center;
+            @include center;
             font-family: 'Kanit', sans-serif;
             @media screen and (max-width: 426px){
                 &{
@@ -182,8 +179,7 @@ main{
                 width: 100%;
                 height: 500px;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                @include center;
                 overflow: hidden;
                 transform-style: preserve-3d;
                 perspective: 600px;
@@ -193,8 +189,7 @@ main{
                 pointer-events: none;
                 div.item {
                     position: absolute;
-                    width: 300px;
-                    height: 400px;
+                    @include sizes(300px, 400px);
                     background-color: coral;
                     --r: calc(var(--position) - var(--offset));
                     --abs: max(calc(var(--r) * -1), var(--r));
@@ -234,8 +229,7 @@ main{
             background-color: black;
             color: white;
             display: flex;
-            text-align: center;
-            justify-content: center;
+            @include center;
             font-family: 'Kanit', sans-serif;
             @media screen and (max-width: 426px){
                 &{
@@ -246,8 +240,7 @@ main{
         }
         div{
             display: flex;
-            align-items: center;
-            justify-content: center;
+            @include center;
             margin: 20px auto;
         }
     }
