@@ -1,0 +1,18 @@
+.mambagang{
+    h2{
+        font-size: 50px;
+        padding: 50px;
+        margin-top: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Kanit', sans-serif;
+        @media screen and (max-width: 426px){
+            &{
+                font-size: 30px;
+                padding: 20px ;
+            }
+        }
+    }
+}

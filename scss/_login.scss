@@ -1,0 +1,44 @@
+main{
+    .form-title{
+        padding-top: 100px;
+        .gif-login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .gif{
+                height: 60px;
+                width: 60px;
+            }
+        }
+        h2{
+            padding-top: 20px;
+            text-align: center;
+    
+        }
+        h4{
+            text-align: center;
+
+        }
+    }
+
+    form{
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+    .boton-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn{
+            background-color: black;
+            border-color: black;
+            &:hover {
+                color: black;
+                background-color: white;
+                border-color: black;
+                transition: ease-out;
+            }
+        }
+    }
+}

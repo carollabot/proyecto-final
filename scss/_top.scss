@@ -2,6 +2,20 @@
 
 .navbar{
     width: 100%;
+    #navbarNavDarkDropdown{
+      @media screen and (max-width: 426px){
+        &{
+            display: none;
+        }
+      }
+      .navbar-toggler{
+        @media screen and (max-width: 426px){
+          &{
+              display: none;
+          }
+        }
+      }
+    }
     .logos{
         width: 25px;
         height: 25px;
@@ -19,5 +33,45 @@
                 width: 425px;
             }
         }
+        .container {
+            position: relative;
+          }
+          
+          .card-img-top {
+            opacity: 1;
+            display: block;
+            transition: .6s ease;
+            backface-visibility: hidden;
+          }
+          
+          .middle {
+            transition: .6s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          
+          .container:hover .card-img-top {
+            opacity: 0.3;
+          }
+          
+          .container:hover .middle {
+            opacity: 1;
+          }
+          
+          .text {
+            button{
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                padding: 16px 32px;
+            }
+          }
+
     }
+
 }
