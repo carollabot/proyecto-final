@@ -1,30 +1,23 @@
+
 main{
-  .navbar{
+  header{
+    width: 100%;
+    @media (min-width:0px) and (max-width: 376px){
+      &{
+        width: 375px;
+      }
+    }
+    .navbar{
       width: 100%;
-      .container-fluid{
-        @media screen and (max-width: 426px){
-          &{
-            width: 100%;
-          }
+      @media (min-width:0px) and (max-width: 376px){
+        &{
+          width: 375px;
         }
       }
-      #navbarNavDarkDropdown{
-        @media screen and (max-width: 426px){
-          &{
-              display: none;
-          }
-        }
-        .navbar-toggler{
-          @media screen and (max-width: 426px){
-            &{
-                display: none;
-            }
-          }
-        }
-      }
-      .logos{
-        @include sizes(25px, 25px);
-      }
+    }
+  }
+  .logos{
+    @include sizes(25px, 25px);
   }
   .productos{
       width: 100%;
@@ -33,6 +26,13 @@ main{
           align-items: center;
           margin: 0%;
           margin-bottom: 30px;
+          .col{
+            @media (min-width:0px) and (max-width: 376px){
+              &{
+                width: 375px;
+              }
+            }
+          }
           @media screen and (max-width: 426px){
               &{
                   width: 425px;

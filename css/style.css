@@ -207,20 +207,20 @@ main {
     align-self: center;
     margin: 20px auto; }
 
-main .navbar {
+main header {
   width: 100%; }
-  @media screen and (max-width: 426px) {
-    main .navbar .container-fluid {
-      width: 100%; } }
-  @media screen and (max-width: 426px) {
-    main .navbar #navbarNavDarkDropdown {
-      display: none; } }
-  @media screen and (max-width: 426px) {
-    main .navbar #navbarNavDarkDropdown .navbar-toggler {
-      display: none; } }
-  main .navbar .logos {
-    width: 25px;
-    height: 25px; }
+  @media (min-width: 0px) and (max-width: 376px) {
+    main header {
+      width: 375px; } }
+  main header .navbar {
+    width: 100%; }
+    @media (min-width: 0px) and (max-width: 376px) {
+      main header .navbar {
+        width: 375px; } }
+
+main .logos {
+  width: 25px;
+  height: 25px; }
 
 main .productos {
   width: 100%; }
@@ -229,6 +229,9 @@ main .productos {
     align-items: center;
     margin: 0%;
     margin-bottom: 30px; }
+    @media (min-width: 0px) and (max-width: 376px) {
+      main .productos .row .col {
+        width: 375px; } }
     @media screen and (max-width: 426px) {
       main .productos .row {
         width: 425px; } }
