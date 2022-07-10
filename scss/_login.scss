@@ -42,4 +42,59 @@ main{
             }
         }
     }
+    .form-title2{
+        text-align: center;
+        h2{
+            padding-top: 20px;
+            text-align: center;
+    
+        }
+        h4{
+            text-align: center;
+
+        }
+    }
+    .cajas{
+        margin: 30px 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media screen and (max-width: 426px){
+            &{
+                margin: 20px 20px;
+            }
+          }
+    }
+    .cajas .box {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid transparent;
+        background-color: #e5e5e5ac;
+        text-decoration: none;
+        @media screen and (max-width: 426px){
+            &{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+    p{
+        margin-bottom: 0%;
+        @media screen and (max-width: 426px){
+            &{
+                font-size: 15px;
+            }
+        }
+    }
+    .box:active, .box:visited {
+        border: 2px solid #ee82ee;
+    }
+    .box:hover {
+        border: 2px solid #ee82ee;
+        cursor: pointer;
+    }
+
 }

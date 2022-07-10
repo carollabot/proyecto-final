@@ -1,83 +1,83 @@
-
-
-.navbar{
-    width: 100%;
-    .container-fluid{
-      @media screen and (max-width: 426px){
-        &{
-          width: 100%;
+main{
+  .navbar{
+      width: 100%;
+      .container-fluid{
+        @media screen and (max-width: 426px){
+          &{
+            width: 100%;
+          }
         }
       }
-    }
-    #navbarNavDarkDropdown{
-      @media screen and (max-width: 426px){
-        &{
-            display: none;
-        }
-      }
-      .navbar-toggler{
+      #navbarNavDarkDropdown{
         @media screen and (max-width: 426px){
           &{
               display: none;
           }
         }
-      }
-    }
-    .logos{
-      @include sizes(25px, 25px);
-    }
-}
-.productos{
-    width: 100%;
-    .row{
-        display: flex;
-        align-items: center;
-        margin: 0%;
-        margin-bottom: 30px;
-        @media screen and (max-width: 426px){
+        .navbar-toggler{
+          @media screen and (max-width: 426px){
             &{
-                width: 425px;
+                display: none;
             }
+          }
         }
-        .container {
-            position: relative;
+      }
+      .logos{
+        @include sizes(25px, 25px);
+      }
+  }
+  .productos{
+      width: 100%;
+      .row{
+          display: flex;
+          align-items: center;
+          margin: 0%;
+          margin-bottom: 30px;
+          @media screen and (max-width: 426px){
+              &{
+                  width: 425px;
+              }
           }
-          
-          .card-img-top {
-            opacity: 1;
-            display: block;
-            transition: .6s ease;
-            backface-visibility: hidden;
-          }
-          
-          .middle {
-            transition: .6s ease;
-            opacity: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-          }
-          
-          .container:hover .card-img-top {
-            opacity: 0.3;
-          }
-          
-          .container:hover .middle {
-            opacity: 1;
-          }
-          
-          .text {
-            button{
-                background-color: black;
-                color: white;
-                font-size: 20px;
-                padding: 16px 32px;
+          .container {
+              position: relative;
             }
-          }
+            
+            .card-img-top {
+              opacity: 1;
+              display: block;
+              transition: .6s ease;
+              backface-visibility: hidden;
+            }
+            
+            .middle {
+              transition: .6s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+            }
+            
+            .container:hover .card-img-top {
+              opacity: 0.3;
+            }
+            
+            .container:hover .middle {
+              opacity: 1;
+            }
+            
+            .text {
+              button{
+                  background-color: black;
+                  color: white;
+                  font-size: 20px;
+                  padding: 16px 32px;
+              }
+            }
 
-    }
+      }
 
+  }
 }
