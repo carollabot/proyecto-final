@@ -207,16 +207,15 @@ main {
     align-self: center;
     margin: 20px auto; }
 
-main header {
-  width: 100%; }
+@media (min-width: 0px) and (max-width: 376px) {
+  main header {
+    width: 375px; } }
+
+main header .navbar {
+  position: fixed; }
   @media (min-width: 0px) and (max-width: 376px) {
-    main header {
-      width: 375px; } }
-  main header .navbar {
-    width: 100%; }
-    @media (min-width: 0px) and (max-width: 376px) {
-      main header .navbar {
-        width: 375px; } }
+    main header .navbar {
+      position: static; } }
 
 main .logos {
   width: 25px;
@@ -261,11 +260,9 @@ main .productos {
       font-size: 20px;
       padding: 16px 32px; }
 
-.navbar {
-  width: 100%; }
-  .navbar .logos {
-    width: 25px;
-    height: 25px; }
+.navbar .logos {
+  width: 25px;
+  height: 25px; }
 
 .productos {
   width: 100%; }

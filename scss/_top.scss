@@ -1,17 +1,16 @@
 
 main{
   header{
-    width: 100%;
     @media (min-width:0px) and (max-width: 376px){
       &{
         width: 375px;
       }
     }
     .navbar{
-      width: 100%;
+      position: fixed;
       @media (min-width:0px) and (max-width: 376px){
         &{
-          width: 375px;
+          position: static;
         }
       }
     }
